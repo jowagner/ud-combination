@@ -76,7 +76,7 @@ def usage(notSupported = None):
             'Set seed for breaking ties how to proceed in the greedy search'
             ' (default: 0 = use a unique random system seed)'),
         ('--random-tiebreaker',
-            'Randomly break ties -- the v1.0 behaviour'
+            'Randomly break ties -- the 2018 shared task behaviour'
             ' (default: break ties with salted hashes of context information)'),
         ('--debug',
             'Print additional information to stderr'),
@@ -137,6 +137,10 @@ def main():
         usage()
         sys.exit(0)
     if opt_seed:
+        # note that very large integers are ok and Python uses all
+        # bits up to a very high limit
+        # (floats, strings etc., however, are passed through hash()
+        # and thus reduced to 64 bits)
         random.seed(opt_seed)
     if opt_outfile:
         final_outfile = opt_outfile

@@ -16,5 +16,7 @@ In Proceedings of The 16th International Conference on Parsing Technologies (IWP
 Association for Computational Linguistics.
 To appear 9th of July 2020.
 
+where experiments using this code are first published.
+
 Run `combine.py --help` for usage.
 

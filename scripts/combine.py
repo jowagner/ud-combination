@@ -58,7 +58,7 @@ def usage(notSupported = None):
     options = (
         ('--method  STRING',
             'Method for combining parses; must be the name of a module in the'
-            ' combination folder that implements the combine() function'
+            ' ud-combination/scripts folder that implements the combine() function'
             ' (default = linear)'),
         ('--weights  STRING',
             'Colon-separated list of weights; must match number'

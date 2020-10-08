@@ -141,6 +141,10 @@ def main():
         # bits up to a very high limit
         # (floats, strings etc., however, are passed through hash()
         # and thus reduced to 64 bits)
+        # Furthermore, note that we pass `opt_seed` to the combine
+        # function as a hash salt. The `random` module is only used
+        # with option --random-tiebreaker or to initialise the hash
+        # salt when the seed is 0.
         random.seed(opt_seed)
     if opt_outfile:
         final_outfile = opt_outfile

@@ -10,17 +10,20 @@ In *Proceedings of Human Language Technologies: The 2009 Annual Conference of th
 Association for Computational Linguistics.
 
 If you use this code please also cite
+the following paper
+in which
+experiments using this code are first published.
 
 [James Barry](https://github.com/jbrry/ "Github Profile"),
 [Joachim Wagner](https://github.com/jowagner/ "Github Profile") and
 [Jennifer Foster](https://github.com/fosterjen/ "Github Profile").
 2020.
-The ADAPT Enhanced Dependency Parser at the IWPT 2020 Shared Task.
-In *Proceedings of The 16th International Conference on Parsing Technologies (IWPT)*.
+[The ADAPT Enhanced Dependency Parser at the IWPT 2020 Shared Task](https://www.aclweb.org/anthology/2020.iwpt-1.24/ "View in ACL Anthology").
+In *Proceedings of the 16th International Conference on Parsing Technologies and the IWPT 2020 Shared Task on Parsing into Enhanced Universal Dependencies*,
+pages 227–235. Online.
 Association for Computational Linguistics.
-To appear 9th of July 2020.
+DOI: 10.18653/v1/2020.iwpt-1.24
 
-where experiments using this code are first published.
 
 Run `combine.py --help` for usage.
 

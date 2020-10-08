@@ -153,7 +153,7 @@ def main():
                 if os.path.exists(opt_outfile):
                     # GzipFile cannot write to existing file
                     os.unlink(opt_outfile)
-        if opt_outfile.endswith('.gz'):
+        if final_outfile.endswith('.gz'):
             out = gzip.GzipFile(opt_outfile, 'wb')
         else:
             out = open(opt_outfile, 'wb')

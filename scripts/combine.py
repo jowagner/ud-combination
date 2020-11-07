@@ -13,6 +13,7 @@
 
 # Can also be imported as a python module
 
+import bz2
 import gzip
 import importlib
 import os
@@ -22,6 +23,8 @@ import sys
 def get_parse_iterator(filename):
     if filename.endswith('.gz'):
         f = gzip.GzipFile(filename, 'rb')
+    elif filename.endswith('.bz2'):
+        f = bz2.BZ2File(filename, 'r')  # always in binary mode
     else:
         f = open(filename, 'rb')
     for parse in get_parse_iterator_for_file(f):
@@ -159,6 +162,8 @@ def main():
                     os.unlink(opt_outfile)
         if final_outfile.endswith('.gz'):
             out = gzip.GzipFile(opt_outfile, 'wb')
+        elif final_outfile.endswith('.bz2'):
+            out = bz2.BZ2File(opt_outfile, 'w')  # always in binary mode
         else:
             out = open(opt_outfile, 'wb')
     else:

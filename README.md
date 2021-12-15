@@ -27,3 +27,11 @@ DOI: 10.18653/v1/2020.iwpt-1.24
 
 Run `combine.py --help` for usage.
 
+## Output Instability
+
+Footnote 12 of [Wagner et al. (2021) Revisiting Tri-training of Dependency Parsers](https://aclanthology.org/2021.emnlp-main.745/) points out that the way how ties are resolved that
+occur in the greedy search of the combiner can effect the output quite a lot.
+In their work, only three parsers are combined and they resort to running the
+combiner multiple times
+with different initialisation (option `--seed`)
+and reporting average LAS.

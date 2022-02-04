@@ -45,7 +45,7 @@
             met where you include wording along the following
             lines in your publication or academic research:
             “[Software Name, Version] used under licence from
-            ADAPT at Dublin City University through SF I Grant
+            ADAPT at Dublin City University through SFI Grant
             Number 13/RC/2106”.
          2. Any additions, updates, amendments, modifications,
             adaptions or improvements which you make to all or
